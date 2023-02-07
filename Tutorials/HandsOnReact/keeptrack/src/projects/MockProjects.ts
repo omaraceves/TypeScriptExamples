@@ -4,7 +4,7 @@ export const MOCK_PROJECTS = [
     new Project({
         id: 1,
         name: 'my project',
-        description: 'blah blah blah',
+        description: 'blah blah blah awlkjdlaksjkdlkasjdlkasjdkljaslkdjasklsdjlksajdlkjaslksdjlkasjdlksajdslkajsdlkajdlkajsldkjalkj',
         imageUrl: '/assets/placeimg_500_300_arch4.jpg',
         contractTypeId: 3,
         constractSignedOn:'2013-08-04T22:39:41.473Z',
