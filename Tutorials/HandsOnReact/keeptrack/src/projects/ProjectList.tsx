@@ -14,13 +14,18 @@ function ProjectList({ projects }: ProjectListProps) {
         setProjectBeingEdited(project);
         console.log(project); //prints the project on screen.
     }
+    
+    const handleCancel = () => {
+        setProjectBeingEdited({});
+    }
+
     return (
         <div className="row">
             {projects.map((x) => (
                 <div key={x.id} className="cols-sm">
                      {
                         x===projectBeingEdited ? (
-                            <ProjectForm />
+                            <ProjectForm onCancel={handleCancel}/>
                         ) : (
                             <ProjectCard project={x} onEdit={handleEdit} />
                         )}
