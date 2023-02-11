@@ -26,7 +26,7 @@ function ProjectList({ projects, onSave }: ProjectListProps) {
                 <div key={x.id} className="cols-sm">
                      {
                         x===projectBeingEdited ? (
-                            <ProjectForm onCancel={handleCancel} onSave={onSave}/>
+                            <ProjectForm onCancel={handleCancel} onSave={onSave} project={x}/>
                         ) : (
                             <ProjectCard project={x} onEdit={handleEdit} />
                         )}
