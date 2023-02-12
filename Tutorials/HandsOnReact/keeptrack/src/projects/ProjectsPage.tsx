@@ -17,6 +17,6 @@ function ProjectsPage() {
                 projects={MOCK_PROJECTS} />
         </>
     );
-}
+} 
 
 export default ProjectsPage;
