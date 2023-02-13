@@ -17,12 +17,14 @@ function ProjectForm({
         
         const handleSubmit = (event: SyntheticEvent) => {
             event.preventDefault();
-            onSave(new Project(project));
+            console.log(project);
+            onSave(project);
         }
         
         const handleChange = (event: any) => {
             
             const { type, name, value, checked } = event.target;
+            console.log(type, name, value, checked);
             // if input type is checkbox use checked
             // otherwise it's type is text, number etc. so use value
             let updatedValue = type === 'checkbox' ? checked : value;
@@ -34,7 +36,7 @@ function ProjectForm({
             const change = {
                 [name]: updatedValue,
             };
-            
+            console.log(change);
             let updatedProject: Project;
             // need to do functional update b/c
             // the new project state is based on the previous project state
@@ -43,8 +45,12 @@ function ProjectForm({
             // spread the previous project properties and the new change
             setProject((p) => {
                 updatedProject = new Project({ ...p, ...change });
-                  return updatedProject;
+                console.log(updatedProject);
+                
+                return updatedProject;
              });
+
+             
         };
     
         return (
