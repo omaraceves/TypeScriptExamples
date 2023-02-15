@@ -23,7 +23,10 @@ function ProjectForm({
         const handleSubmit = (event: SyntheticEvent) => {
             event.preventDefault();
             console.log(project);
-            if(!isValid()) return;
+            
+            if(!isValid()) 
+                return;
+            
             onSave(project);
         }
         
@@ -78,6 +81,9 @@ function ProjectForm({
         }
 
         function isValid() {
+            
+            console.log(errors);
+
             return (
                 errors.name.length === 0 &&
                 errors.description.length === 0 &&
@@ -96,8 +102,8 @@ function ProjectForm({
                     onChange={handleChange} 
                 />
                 {errors.name.length > 0 && (
-                    <div className="Card error">
-                        <p>{errors.name}</p>
+                    <div className="card error">
+                    <p>{errors.name}</p>
                     </div>
                 )}
 
@@ -109,7 +115,7 @@ function ProjectForm({
                     onChange={handleChange}>
                 </textarea>
                 {errors.description.length > 0 && (
-                    <div className="Card error">
+                    <div className="card error">
                         <p>{errors.description}</p>
                     </div>
                 )}
@@ -122,7 +128,7 @@ function ProjectForm({
                     onChange={handleChange}
                 />
                 {errors.budget.length > 0 && (
-                    <div className="Card error">
+                    <div className="card error">
                         <p>{errors.budget}</p>
                     </div>
                 )}
