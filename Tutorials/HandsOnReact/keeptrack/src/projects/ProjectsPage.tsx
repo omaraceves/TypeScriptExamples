@@ -7,7 +7,7 @@ function ProjectsPage() {
     const [projects, setProjects] = useState<Project[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | undefined>(undefined);
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = useState(1); //current page is initialized at 1
 
     const handleMoreClick = () => {
         setCurrentPage((currentPage) => currentPage + 1);
@@ -35,6 +35,7 @@ function ProjectsPage() {
             }
         }
         loadProjects();
+        console.log('I got fired');
     }, [currentPage])
 
     const saveProject = (project: Project) => {
