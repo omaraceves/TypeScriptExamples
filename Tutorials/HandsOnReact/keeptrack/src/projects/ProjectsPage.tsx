@@ -35,7 +35,6 @@ function ProjectsPage() {
             }
         }
         loadProjects();
-        console.log('I got executed');
     }, [currentPage])
 
     const saveProject = (project: Project) => {
