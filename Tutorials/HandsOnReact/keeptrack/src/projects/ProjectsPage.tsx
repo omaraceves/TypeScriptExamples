@@ -35,6 +35,7 @@ function ProjectsPage() {
             }
         }
         loadProjects();
+        //useEffect will get executed when currentPage gets updated.
     }, [currentPage])
 
     const saveProject = (project: Project) => {
