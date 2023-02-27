@@ -1,3 +1,4 @@
+import { findAllByAltText } from '@testing-library/react';
 import { Project } from './Project';
 const baseUrl = 'http://localhost:4000';
 const url = `${baseUrl}/projects`;
@@ -80,6 +81,14 @@ const projectApi = {
                 'There was an error updating the project. Please try again.'     
             );
         });
+    },
+
+    find(id: number) {
+        console.log(id);
+        return fetch(`${url}/${id}`)
+            .then(checkStatus)
+            .then(parseJson)
+            .then(convertToProjectModel)
     }
 };
 
