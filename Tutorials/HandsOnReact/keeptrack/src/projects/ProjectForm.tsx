@@ -143,6 +143,8 @@ function ProjectForm({
                     <button className="primary bordered medium">Save</button>
                     <span></span>
                     <button type="button" className="bordered medium" onClick={onCancel}>cancel</button>
+                    <span></span>
+                    <button type="button" className="secondary bordered medium" onClick={onCancel}>delete</button>
                 </div>
             </form>
         );

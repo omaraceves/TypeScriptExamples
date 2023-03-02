@@ -61,6 +61,30 @@ function ProjectsPage() {
         });
     };
 
+    const deleteProject = (project: Project) => {
+        if(typeof project.id === "undefined")
+            return project;
+        
+        projectApi
+        .delete(project.id)
+        .then((deletedProject: Project) => {
+            let deletedProjects = projects.map((p: Project) => {
+                if(deletedProject.id !== p.id)
+                    return p;
+
+                return;
+            });
+
+            //sets value for States with updated projects
+            setProjects(deletedProjects);
+        })
+        .catch((e) => {
+            if (e instanceof Error) {
+                setError(e.message);
+            }
+        });
+    };
+
     return (
         <>
             <h1>Projects</h1>

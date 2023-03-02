@@ -89,7 +89,25 @@ const projectApi = {
             .then(checkStatus)
             .then(parseJson)
             .then(convertToProjectModel)
-    }
+    },
+
+    delete(id: number) {
+        console.log(`Deleting: ${id}`);
+        return fetch(`${url}/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(checkStatus)
+        .then(parseJson)
+        .catch((error: TypeError) => {
+            console.log('log client error ' + error);
+            throw new Error(
+                'There was an error deleting the project. Please try again.'     
+            );
+        });
+    },
 };
 
 export { projectApi };
