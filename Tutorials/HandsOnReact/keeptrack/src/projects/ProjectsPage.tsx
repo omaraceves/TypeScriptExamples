@@ -69,10 +69,13 @@ function ProjectsPage() {
         .delete(project.id)
         .then((deletedProject: Project) => {
             let deletedProjects = projects.map((p: Project) => {
+                //todo fix this
                 if(deletedProject.id !== p.id)
                     return p;
+                else
+                    return new Project();
 
-                return;
+                
             });
 
             //sets value for States with updated projects
