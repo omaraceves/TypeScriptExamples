@@ -68,18 +68,18 @@ function ProjectsPage() {
         projectApi
         .delete(project.id)
         .then((deletedProject: Project) => {
-            let deletedProjects = projects.map((p: Project) => {
-                //todo fix this
-                if(deletedProject.id !== p.id)
-                    return p;
-                else
-                    return new Project();
-
-                
-            });
+            var updatedProjects = projects;
+            var i = 0;
+                while (i < updatedProjects.length) {
+                    if (updatedProjects[i].id === deletedProject.id) {
+                        updatedProjects.splice(i, 1);
+                    } else {
+                        ++i;
+                    }
+                }
 
             //sets value for States with updated projects
-            setProjects(deletedProjects);
+            setProjects(updatedProjects);
         })
         .catch((e) => {
             if (e instanceof Error) {
@@ -105,7 +105,7 @@ function ProjectsPage() {
                 </div>
             )}
 
-            <ProjectList onSave={saveProject} projects={projects} />
+            <ProjectList onDelete={deleteProject} onSave={saveProject} projects={projects} />
 
             {!loading && !error && (
                 <div className="row">

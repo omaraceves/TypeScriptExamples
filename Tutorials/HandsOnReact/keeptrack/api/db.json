@@ -531,16 +531,6 @@
       "isActive": false
     },
     {
-      "id": 54,
-      "name": "Anderson LLC",
-      "description": "Diverse incremental algorithm. Expedita laudantium sit quisquam sit nobis eum nam ea natus.",
-      "imageUrl": "/assets/placeimg_500_300_arch10.jpg",
-      "contractTypeId": 2,
-      "contractSignedOn": "2015-01-21T07:03:49.836Z",
-      "budget": 999999,
-      "isActive": false
-    },
-    {
       "id": 55,
       "name": "Marvin, Stroman and Turcotte",
       "description": "Self-enabling empowering neural-net. Repellat occaecati repudiandae dolores blanditiis temporibus quia et ab et.",
@@ -728,16 +718,6 @@
       "contractTypeId": 5,
       "contractSignedOn": "2010-11-07T07:38:10.109Z",
       "budget": 69252,
-      "isActive": true
-    },
-    {
-      "id": 74,
-      "name": "Armstrong, Crona and Ziemann",
-      "description": "Switchable bifurcated task-force. Hic sed at et id et et qui quis dolores.",
-      "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
-      "contractTypeId": 2,
-      "contractSignedOn": "2012-05-15T12:41:51.113Z",
-      "budget": 91566,
       "isActive": true
     },
     {
@@ -939,16 +919,6 @@
       "contractSignedOn": "2017-03-28T16:05:32.780Z",
       "budget": 63025,
       "isActive": true
-    },
-    {
-      "id": 95,
-      "name": "Armstrong - Hands",
-      "description": "Persistent 3rd generation capability. Sint omnis asperiores voluptas sapiente delectus blanditiis earum ut voluptatem.",
-      "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
-      "contractTypeId": 2,
-      "contractSignedOn": "2010-09-24T21:02:41.601Z",
-      "budget": 38853,
-      "isActive": false
     },
     {
       "id": 97,

@@ -5,12 +5,14 @@ interface ProjectFormProps{
     project: Project;
     onCancel: () => void; 
     onSave: (project: Project) => void;
+    onDelete: (project: Project) => void;
 }
 
 function ProjectForm({
     project: initialProject, 
     onSave, 
-    onCancel
+    onCancel,
+    onDelete
     }: ProjectFormProps) 
     {
         const [project, setProject] = useState(initialProject);
@@ -28,6 +30,12 @@ function ProjectForm({
                 return;
             
             onSave(project);
+        }
+
+        const handleDelete = (event: SyntheticEvent) => {
+            console.log(project);
+            onDelete(project);
+            onCancel();
         }
         
         const handleChange = (event: any) => {
@@ -144,7 +152,7 @@ function ProjectForm({
                     <span></span>
                     <button type="button" className="bordered medium" onClick={onCancel}>cancel</button>
                     <span></span>
-                    <button type="button" className="secondary bordered medium" onClick={onCancel}>delete</button>
+                    <button type="button" className="secondary bordered medium" onClick={handleDelete}>delete</button>
                 </div>
             </form>
         );
