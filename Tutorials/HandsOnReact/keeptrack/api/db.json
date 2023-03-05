@@ -451,16 +451,6 @@
       "isActive": true
     },
     {
-      "id": 46,
-      "name": "Bernier and Sons",
-      "description": "User-friendly directional standardization. Temporibus qui laudantium ipsam sapiente ut eum ab omnis quasi.",
-      "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
-      "contractTypeId": 1,
-      "contractSignedOn": "2018-01-17T21:58:28.876Z",
-      "budget": 94076,
-      "isActive": true
-    },
-    {
       "id": 47,
       "name": "Lindgren, Conroy and Beer",
       "description": "Organized maximized function. Laborum voluptate quia temporibus non quo libero doloribus sed dolorum.",
@@ -651,16 +641,6 @@
       "isActive": false
     },
     {
-      "id": 67,
-      "name": "Bednar - Yundt",
-      "description": "Reactive secondary protocol. Cumque fugiat reprehenderit commodi et ea voluptas aliquid facere placeat.",
-      "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
-      "contractTypeId": 4,
-      "contractSignedOn": "2014-07-16T21:38:04.631Z",
-      "budget": 59682,
-      "isActive": false
-    },
-    {
       "id": 68,
       "name": "Collier and Sons",
       "description": "Organic background support. Molestiae in itaque doloremque magnam et placeat vero accusamus quisquam.",
@@ -778,16 +758,6 @@
       "contractTypeId": 3,
       "contractSignedOn": "2013-04-26T03:54:35.005Z",
       "budget": 80627,
-      "isActive": true
-    },
-    {
-      "id": 81,
-      "name": "Beatty, Boehm and West",
-      "description": "Operative high-level emulation. Quos qui dolorum aut voluptatem rerum vel provident necessitatibus dicta.",
-      "imageUrl": "/assets/placeimg_500_300_arch4.jpg",
-      "contractTypeId": 5,
-      "contractSignedOn": "2012-08-09T13:45:53.932Z",
-      "budget": 75030,
       "isActive": true
     },
     {

@@ -36,7 +36,7 @@ function ProjectsPage() {
         }
         loadProjects();
         //useEffect will get executed when currentPage gets updated.
-    }, [currentPage])
+    }, [currentPage, projects.length])
 
     const saveProject = (project: Project) => {
         projectApi
@@ -68,10 +68,11 @@ function ProjectsPage() {
         projectApi
         .delete(project.id)
         .then((deletedProject: Project) => {
-            var updatedProjects = projects;
-            var i = 0;
+            let updatedProjects = [...projects];
+            let i = 0;
                 while (i < updatedProjects.length) {
                     if (updatedProjects[i].id === deletedProject.id) {
+                        console.log(`Deleting project ${deleteProject}`)
                         updatedProjects.splice(i, 1);
                     } else {
                         ++i;
