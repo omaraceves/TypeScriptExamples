@@ -35,6 +35,7 @@ function ProjectForm({
         const handleDelete = (event: SyntheticEvent) => {
             console.log(project);
             onDelete(project);
+            //return to previous screen
             onCancel();
         }
         
