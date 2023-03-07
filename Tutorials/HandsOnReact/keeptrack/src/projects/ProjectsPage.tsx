@@ -79,7 +79,7 @@ function ProjectsPage() {
                     }
                 }
 
-            //sets value for States with updated projects
+            //sets value for States with updated projects.
             setProjects(updatedProjects);
         })
         .catch((e) => {
