@@ -92,7 +92,6 @@ const projectApi = {
     },
 
     delete(id: number) {
-        console.log(`Deleting: ${id}`);
         return fetch(`${url}/${id}`, {
             method: 'DELETE',
             headers: {

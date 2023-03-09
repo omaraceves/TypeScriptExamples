@@ -8,6 +8,7 @@ function ProjectsPage() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | undefined>(undefined);
     const [currentPage, setCurrentPage] = useState(1); //current page is initialized at 1
+    const [projectCount, setprojectCount] = useState(0); //current page is initialized at 1
 
     const handleMoreClick = () => {
         setCurrentPage((currentPage) => currentPage + 1);
@@ -20,10 +21,13 @@ function ProjectsPage() {
                 const data = await projectApi.get(currentPage)
                 setError('');
                 setProjects(data);
+                setprojectCount(projects.length);
                 if(currentPage === 1) {
                     setProjects(data);
+                    setprojectCount(projects.length);
                 } else {
-                    setProjects((projects) => [...projects, ...data])
+                    setProjects((projects) => [...projects, ...data]);
+                    setprojectCount(projects.length);
                 }
             }
             catch(e) {
@@ -36,7 +40,7 @@ function ProjectsPage() {
         }
         loadProjects();
         //useEffect will get executed when currentPage gets updated.
-    }, [currentPage, projects.length])
+    }, [currentPage, projectCount])
 
     const saveProject = (project: Project) => {
         projectApi
@@ -67,12 +71,14 @@ function ProjectsPage() {
         
         projectApi
         .delete(project.id)
-        .then((deletedProject: Project) => {
+        .then(() => {
             let updatedProjects = [...projects];
             let i = 0;
                 while (i < updatedProjects.length) {
-                    if (updatedProjects[i].id === deletedProject.id) {
-                        console.log(`Deleting project ${deleteProject}`)
+                    console.log(updatedProjects[i].id);
+                    console.log(project.id);
+                    if (updatedProjects[i].id === project.id) {
+                        console.log('Entering');
                         updatedProjects.splice(i, 1);
                     } else {
                         ++i;
@@ -80,7 +86,10 @@ function ProjectsPage() {
                 }
 
             //sets value for States with updated projects
+            // console.log(projects.length);
+            // console.log(updatedProjects.length);
             setProjects(updatedProjects);
+            setprojectCount(projects.length);
         })
         .catch((e) => {
             if (e instanceof Error) {
