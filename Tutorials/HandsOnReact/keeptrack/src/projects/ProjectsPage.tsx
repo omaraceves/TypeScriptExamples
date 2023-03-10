@@ -85,9 +85,6 @@ function ProjectsPage() {
                     }
                 }
 
-            //sets value for States with updated projects
-            // console.log(projects.length);
-            // console.log(updatedProjects.length);
             setProjects(updatedProjects);
             setprojectCount(projects.length);
         })
