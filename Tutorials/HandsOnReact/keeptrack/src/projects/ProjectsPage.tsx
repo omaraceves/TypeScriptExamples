@@ -8,7 +8,6 @@ function ProjectsPage() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | undefined>(undefined);
     const [currentPage, setCurrentPage] = useState(1); //current page is initialized at 1
-    const [projectCount, setprojectCount] = useState(0); //current page is initialized at 1
 
     const handleMoreClick = () => {
         setCurrentPage((currentPage) => currentPage + 1);
@@ -21,13 +20,10 @@ function ProjectsPage() {
                 const data = await projectApi.get(currentPage)
                 setError('');
                 setProjects(data);
-                setprojectCount(projects.length);
                 if(currentPage === 1) {
                     setProjects(data);
-                    setprojectCount(projects.length);
                 } else {
                     setProjects((projects) => [...projects, ...data]);
-                    setprojectCount(projects.length);
                 }
             }
             catch(e) {
@@ -40,7 +36,7 @@ function ProjectsPage() {
         }
         loadProjects();
         //useEffect will get executed when currentPage gets updated.
-    }, [currentPage, projectCount])
+    }, [currentPage])
 
     const saveProject = (project: Project) => {
         projectApi
@@ -86,7 +82,6 @@ function ProjectsPage() {
                 }
 
             setProjects(updatedProjects);
-            setprojectCount(projects.length);
         })
         .catch((e) => {
             if (e instanceof Error) {

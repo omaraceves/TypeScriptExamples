@@ -32,7 +32,7 @@
     },
     {
       "id": 8,
-      "name": "Halvorson, Fadel and Zieme",
+      "name": "TBD",
       "description": "Triple-buffered transitional encoding. Amet illum quis expedita ut repudiandae et aut sit quia.",
       "imageUrl": "/assets/placeimg_500_300_arch1.jpg",
       "contractTypeId": 5,
@@ -101,16 +101,6 @@
       "isActive": true
     },
     {
-      "id": 16,
-      "name": "Haag - O'Keefe",
-      "description": "Vision-oriented dedicated knowledge user. Et rem vero et exercitationem et veritatis accusamus id optio.",
-      "imageUrl": "/assets/placeimg_500_300_arch2.jpg",
-      "contractTypeId": 5,
-      "contractSignedOn": "2017-02-16T12:28:52.794Z",
-      "budget": 55137,
-      "isActive": false
-    },
-    {
       "id": 17,
       "name": "Murray, Gutmann and Ankunding",
       "description": "Implemented next generation flexibility. Enim quibusdam voluptatibus eum enim quas commodi et corporis id.",
@@ -168,16 +158,6 @@
       "contractTypeId": 1,
       "contractSignedOn": "2010-03-15T22:45:27.341Z",
       "budget": 25165,
-      "isActive": false
-    },
-    {
-      "id": 26,
-      "name": "Gutmann - Rogahn",
-      "description": "Business-focused even-keeled hub. Dignissimos dolorem sed sint nostrum repellat et voluptas voluptatem eaque.",
-      "imageUrl": "/assets/placeimg_500_300_arch9.jpg",
-      "contractTypeId": 6,
-      "contractSignedOn": "2012-07-18T12:04:53.879Z",
-      "budget": 82401,
       "isActive": false
     },
     {
@@ -241,16 +221,6 @@
       "isActive": true
     },
     {
-      "id": 37,
-      "name": "Harris - Jacobi",
-      "description": "Integrated value-added extranet. Laborum enim omnis rem commodi provident tempore quibusdam minus in.",
-      "imageUrl": "/assets/placeimg_500_300_arch8.jpg",
-      "contractTypeId": 3,
-      "contractSignedOn": "2018-08-05T12:53:14.563Z",
-      "budget": 69823,
-      "isActive": true
-    },
-    {
       "id": 40,
       "name": "Mraz Inc",
       "description": "Business-focused stable matrices. Laudantium voluptatibus fugit vel minima hic deleniti perspiciatis ut amet.",
@@ -259,16 +229,6 @@
       "contractSignedOn": "2015-05-12T11:51:27.436Z",
       "budget": 37844,
       "isActive": false
-    },
-    {
-      "id": 41,
-      "name": "Gottlieb - Streich",
-      "description": "Re-contextualized full-range internet solution. Est sint perferendis occaecati pariatur quas assumenda molestias esse vitae.",
-      "imageUrl": "/assets/placeimg_500_300_arch10.jpg",
-      "contractTypeId": 4,
-      "contractSignedOn": "2012-08-07T00:35:43.491Z",
-      "budget": 30800,
-      "isActive": true
     },
     {
       "id": 42,
@@ -318,16 +278,6 @@
       "contractTypeId": 2,
       "contractSignedOn": "2015-04-27T07:26:24.638Z",
       "budget": 59026,
-      "isActive": false
-    },
-    {
-      "id": 48,
-      "name": "Gusikowski, Nikolaus and Beahan",
-      "description": "Reactive maximized standardization. Minus nisi maxime autem non est qui aspernatur adipisci omnis.",
-      "imageUrl": "/assets/placeimg_500_300_arch8.jpg",
-      "contractTypeId": 3,
-      "contractSignedOn": "2017-09-29T00:26:36.192Z",
-      "budget": 54297,
       "isActive": false
     },
     {
@@ -381,16 +331,6 @@
       "isActive": false
     },
     {
-      "id": 57,
-      "name": "Hegmann - Harber",
-      "description": "Front-line human-resource Graphic Interface. Vero in sint occaecati distinctio praesentium qui dolorem corporis veritatis.",
-      "imageUrl": "/assets/placeimg_500_300_arch7.jpg",
-      "contractTypeId": 7,
-      "contractSignedOn": "2013-01-14T20:45:35.534Z",
-      "budget": 26873,
-      "isActive": true
-    },
-    {
       "id": 58,
       "name": "Jacobs, Kuphal and Torphy",
       "description": "Seamless disintermediate extranet. Quis enim et qui reiciendis est nisi vel laborum magnam.",
@@ -409,16 +349,6 @@
       "contractSignedOn": "2015-05-12T02:10:30.610Z",
       "budget": 34122,
       "isActive": true
-    },
-    {
-      "id": 60,
-      "name": "Hayes Groups",
-      "description": "Streamlined local standardization. Molestiae qui exercitationem laboriosam necessitatibus ullam rem modi praesentium totam.",
-      "imageUrl": "/assets/placeimg_500_300_arch8.jpg",
-      "contractTypeId": 1,
-      "contractSignedOn": "2017-02-04T11:52:11.526Z",
-      "budget": 50011,
-      "isActive": false
     },
     {
       "id": 61,
@@ -489,16 +419,6 @@
       "contractSignedOn": "2015-03-18T20:38:45.136Z",
       "budget": 71363,
       "isActive": true
-    },
-    {
-      "id": 71,
-      "name": "Hartmann - Krajcik",
-      "description": "Expanded mission-critical function. Nihil excepturi dolorem vero voluptas aut quia nam eligendi vitae.",
-      "imageUrl": "/assets/placeimg_500_300_arch10.jpg",
-      "contractTypeId": 5,
-      "contractSignedOn": "2015-11-23T10:41:49.048Z",
-      "budget": 51709,
-      "isActive": false
     },
     {
       "id": 72,
@@ -641,16 +561,6 @@
       "isActive": false
     },
     {
-      "id": 94,
-      "name": "Hartmann - Wintheiser",
-      "description": "Face to face static conglomeration. Et ullam ad eaque commodi maiores facere quos nesciunt laudantium.",
-      "imageUrl": "/assets/placeimg_500_300_arch5.jpg",
-      "contractTypeId": 6,
-      "contractSignedOn": "2017-03-28T16:05:32.780Z",
-      "budget": 63025,
-      "isActive": true
-    },
-    {
       "id": 97,
       "name": "Towne - Altenwerth",
       "description": "Self-enabling 24/7 leverage. Itaque voluptas quisquam illo dolorem tenetur ex et quidem voluptatem.",
@@ -658,16 +568,6 @@
       "contractTypeId": 6,
       "contractSignedOn": "2014-10-30T11:44:51.088Z",
       "budget": 83391,
-      "isActive": false
-    },
-    {
-      "id": 99,
-      "name": "Heathcote - Pacocha",
-      "description": "Synchronised grid-enabled hub. Quis modi inventore possimus tenetur eligendi deleniti fugit deserunt et.",
-      "imageUrl": "/assets/placeimg_500_300_arch5.jpg",
-      "contractTypeId": 1,
-      "contractSignedOn": "2015-03-31T22:18:57.328Z",
-      "budget": 81317,
       "isActive": false
     }
   ]
