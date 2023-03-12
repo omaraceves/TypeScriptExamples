@@ -108,7 +108,23 @@ const projectApi = {
         });
     },
 
-    //Add Additions
+    add(project: Project) {
+        return fetch(`${url}`, {
+            method: 'POST',
+            body: JSON.stringify(project),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(checkStatus)
+        .then(parseJson)
+        .catch((error: TypeError) => {
+            console.log('log client error ' + error);
+            throw new Error(
+                'There was an error adding the project. Please try again.'     
+            );
+        });
+    },
 };
 
 export { projectApi };
