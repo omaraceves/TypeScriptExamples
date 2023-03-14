@@ -2,6 +2,7 @@ import React, {Fragment, useState, useEffect } from 'react';
 import { projectApi } from './projectApi';
 import ProjectList from './ProjectList';
 import { Project } from './Project';
+import { Link } from 'react-router-dom';
 
 function ProjectsPage() {
     const [projects, setProjects] = useState<Project[]>([]);
@@ -92,7 +93,10 @@ function ProjectsPage() {
 
     return (
         <>
-            <h1>Projects</h1>
+            <h1>
+                Projects
+                <Link to={'/projects/projectAdd/'}>Add</Link>
+            </h1>
 
             {error && (
                 <div className="row">
