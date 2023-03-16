@@ -571,20 +571,11 @@
       "isActive": false
     },
     {
-      "name": "Nuevo ",
-      "description": "nuevo",
-      "imageUrl": "",
-      "contractSignedOn": "2023-03-15T06:44:54.258Z",
-      "budget": 100,
-      "isActive": false,
-      "id": 98
-    },
-    {
-      "name": "Nuevo ",
-      "description": "nuevo",
-      "imageUrl": "",
-      "contractSignedOn": "2023-03-15T06:44:54.258Z",
-      "budget": 100,
+      "name": "1 Nuevo Proyecto 2",
+      "description": "Este es un nuevo proyecto",
+      "imageUrl": "/assets/placeimg_500_300_arch4.jpg",
+      "contractSignedOn": "2023-03-16T06:39:08.881Z",
+      "budget": 1500000,
       "isActive": false,
       "id": 99
     }

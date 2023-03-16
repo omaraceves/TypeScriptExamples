@@ -8,6 +8,8 @@ interface ProjectAddProps {
 export default function ProjectAdd() {
 
   const saveProject = (project: Project) => {
+    project.imageUrl = '/assets/placeimg_500_300_arch4.jpg';
+
     projectApi
     .add(project)
     .catch((e) => {
