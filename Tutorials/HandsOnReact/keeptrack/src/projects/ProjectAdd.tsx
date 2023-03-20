@@ -11,7 +11,7 @@ export default function ProjectAdd() {
     project.imageUrl = '/assets/placeimg_500_300_arch4.jpg';
 
     projectApi
-    .add(project)
+    .add(project) //api call
     .catch((e) => {
         if (e instanceof Error) {
             console.log(e.message);
